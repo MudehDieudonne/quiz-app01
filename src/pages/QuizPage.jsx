@@ -33,6 +33,8 @@ const Quiz = () => {
 
     return (
         <div className="quiz-page">
+            <h2>Question {id}</h2>
+            <QuestionCard question={question} onAnswer={handleAnswer} />
         </div>
     )
 }
