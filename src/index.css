@@ -77,13 +77,52 @@ button:hover {
   width: 80%;
 }
 
-/* Timer */
-/* .timer {
-  font-size: 1.5rem;
-  margin: 20px 0;
-  font-weight: bold;
-  color: #e63946;
-} */
+.skipp {
+    background-color: #6c757d;
+}
+
+/* Add these new styles */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.quiz-settings {
+    margin: 20px 0;
+}
+
+.setting-group {
+    margin: 15px 0;
+}
+
+.setting-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.setting-group select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* Timer styles */
+.timer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #dc3545;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
 /* Results Page */
 .results-page {
@@ -117,5 +156,33 @@ button:hover {
 
 .results-page button {
   font-size: 1.2rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .home-page {
+        padding: 20px;
+        margin: 20px;
+        width: 90%;
+    }
+
+    .home-page h1 {
+        font-size: 1.8rem;
+    }
+
+    .question-card {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .question-card button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .results-page li {
+        width: 90%;
+        margin: 10px auto;
+    }
 }
 
